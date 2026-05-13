@@ -1,0 +1,13 @@
+<%- include( './partials/head', {title: title} ) %>
+<body>
+  <%- include("./partials/navBar" ) %>
+  <h1>New Post</h1>
+
+  <form method="POST" action="/new" >
+      <label for="name">Name: </label>
+      <input type="text" name="name">
+      <label for="text">Text Message: </label>
+      <input type="text" name="text" id="text">
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
